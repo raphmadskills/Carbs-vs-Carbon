@@ -1,0 +1,20 @@
+.introduction {
+  background-image: url(../images/sandwich\ logo.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0;
+  margin-bottom: 0;
+  }
+
+  .display-2 {
+    text-decoration: cadetblue;
+    font-weight: bold;
+  }
+
+  .carbsVsCarbonBaby {
+    background-color: indigo;
+    width: fit-content;
+    text-align: center;
+    text-decoration: ivory;
+    left:0;
+  }

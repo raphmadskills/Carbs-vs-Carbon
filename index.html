@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbs Against Carbon</title>
+
+  <!-- This adds everything Bootstrap components need to our page  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/introduction.css">
+  <link rel="stylesheet" href="./assets/css/breeds.css">
+  <link rel="stylesheet" href="./assets/css/catCarousel.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+</head>
+
+<body>
+  <!-- Navigation bar starts here - it uses Navbar -->
+  <!--
+    In order to make navbar stick to the top I used sticky-top class.
+    More information about different positioning modes is available here - https://getbootstrap.com/docs/4.5/utilities/position/
+  -->
+  <head>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- visually-hidden hides text on the screen but still keeps it understandable for search engines and such -->
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/carbsvscarbonnavlogo-01.png" width="45%" alt="" class=""><span class=""></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Sandwiches
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./the big sloppy.html">The Big Sloppy</a></li>
+                <li><a class="dropdown-item" href="./lean bean carbon machine.html">Lean, Bean Carbon Machine</a></li>
+                <li><a class="dropdown-item" href="./what the bug?.html">What the Bug?</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+             
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./carbon calculator.html" target="_blank">Carbon Calculator</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  </head>
+  
+  <!-- Navigation bar ends here -->
+
+  <main>
+    <section>
+    <img class="logoMouseEvent" src="./assets/images/carb vs carbon logos-01.png" 
+    onmouseover="this.src='./assets/images/carb vs carbon logos-02.png'"
+    onmouseout="this.src='./assets/images/carb vs carbon logos-01.png'" />
+ </section>
+
+ <!--<section>
+<embed type="text/html" src="https://news.files.bbci.co.uk/include/newsspec/21841-green-diet/english/app/embed" width="100%" height="100%">
+</section>
+
+
+    <!-- Introduction section ends here -->
+
+    <!-- Breeds section starts here -->
+    <section id="breeds">
+      <!-- 
+        Breeds introduction section starts here - it uses Bootstrap utility classes for styling:
+
+        - text-light and other available colors can be found here - https://getbootstrap.com/docs/4.5/utilities/colors/
+        - p-3, my-4 and other spacing classes can be found here - https://getbootstrap.com/docs/4.5/utilities/spacing/
+        - text-center and other positioning classes can be found here - https://getbootstrap.com/docs/4.5/utilities/text/
+
+        Styling for headings and paragraphs is applied automatically but can be found here - https://getbootstrap.com/docs/4.5/content/typography/
+      -->
+      <div class="section-introduction text-light p-3">
+        <h2 class="text-center display-4">Low Carbon Sandwiches</h2>
+        <p class="text-center my-4">
+          Many of us have cut down on using plastic bags and plastic straws, recycle where possible and have turned our heating down a degree or two.
+          
+          But have you considered how your weekly shop can change the world? 
+        </p>
+      </div>
+      <!-- Breeds introduction section end here -->
+      <!--
+        Grid of cards for each breed starts here - it uses grid and Cards component
+
+        Grids can be made responsive (adapt to the size of the screen). For this they use common screen sizes to change themselves. These are coded into Bootstrap using abbreviations - https://getbootstrap.com/docs/4.5/layout/grid/#grid-options
+
+        Grid has 12 columns available, so when defining how wide our card should be we say how many columns it should span. With this in mind "col-sm-12 col-md-6 col-lg-4" actually means:
+        - col-sm-12 - on the small screens please stretch yourself across all 12 columns, aka become full width;
+        - col-md-6 - on the medium screens please stretch yourself only across 6 columns, aka become half width
+        - col-lg-4 - on the large screens please stretch yourself across 4 columns, aka become third of the width
+      -->
+      <div class="container">
+        <div class="row">
+          <!-- Card starts here -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card breeds__card">
+              <img src="./assets/images/sandwiches 4-01.png" class="card-img-top" alt="Ragdoll cat">
+              <div class="card-body">
+                <h5 class="card-title">The Big Sloppy</h5>
+                <p class="card-text">
+                  
+                </p>
+                <a target="_blank" href="./the big sloppy.html" class="btn btn-outline-dark">
+                  Read more
+                  <span class="visually-hidden">(about ragdoll breed)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card ends here -->
+
+          <!-- Card starts here -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card breeds__card">
+              <img src="./assets/images/sandwiches 4-02.png" class="card-img-top" alt="Ragdoll cat">
+              <div class="card-body">
+                <h5 class="card-title">Lean, Bean Carbon Machine</h5>
+               
+                <a target="_blank" href="./lean bean carbon machine" class="btn btn-outline-dark">
+                  Read more
+                  <span class="visually-hidden">(about abyssinian breed)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card ends here -->
+
+          <!-- Card starts here -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card breeds__card">
+              <img src="./assets/images/sandwiches 4-03.png" class="card-img-top" alt="Ragdoll cat">
+              <div class="card-body">
+                <h5 class="card-title">What the bug?</h5>
+                <p class="card-text">
+                  
+
+                </p>
+                <a target="_blank" href="./what the bug?" class="btn btn-outline-dark">
+                  Read more
+                  <span class="visually-hidden">(about domestic shorthaired breed)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card ends here -->
+
+        </div>
+      </div>
+      <!-- Grid of cards for each breed starts here -->
+    </section>
+    <!-- Breeds section ends here -->
+
+   
+  </main>
+</body>
+
+<div class="footer bg-light">
+  <p>With Thanks to Code First Girls and Service Now</p>
+</div>
+
+</html>

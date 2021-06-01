@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbs Against Carbon</title>
+
+  <!-- This adds everything Bootstrap components need to our page  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/introduction.css">
+  <link rel="stylesheet" href="./assets/css/breeds.css">
+  <link rel="stylesheet" href="./assets/css/catCarousel.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+</head>
+
+<body>
+  <!-- Navigation bar starts here - it uses Navbar -->
+  <!--
+    In order to make navbar stick to the top I used sticky-top class.
+    More information about different positioning modes is available here - https://getbootstrap.com/docs/4.5/utilities/position/
+  -->
+  <head>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- visually-hidden hides text on the screen but still keeps it understandable for search engines and such -->
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/carbsvscarbonnavlogo-01.png" width="45%" alt="" class=""><span class=""></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Sandwiches
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./the big sloppy.html big sloppy.html">The Big Sloppy</a></li>
+                <li><a class="dropdown-item" href="./lean bean carbon machine.html">Lean, Bean Carbon Machine</a></li>
+                <li><a class="dropdown-item" href="./what the bug?.html">What the Bug?</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+             
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./carbon calculator.html" target="_blank">Carbon Calculator</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  </head>
+  
+  <!-- Navigation bar ends here -->
+
+ <!-- Card starts here -->
+ <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+  <div class="card breeds__card">
+    <img src="./assets/images/sandwiches 4-02.png" class="card-img-top" alt="Ragdoll cat">
+    <div class="card-body">
+      <h5 class="card-title">Lean, Bean Carbon Machine</h5>         
+      <p class="card-text">
+        The Bread: Seeded Bap
+        The filling: Lentils have a very low carbon footprint up to 43 time less than beef — and require little water to grow. They also clean and fortify soil to make it easier to grow other crops. Legume crops like beans also help build soil.
+        The crunch: Foraged leaves / microgreens or homegrown salad – if in doubt just go for organic salad or lettuce!
+        
+        
+      </p>
+      
+    </div>
+  </div>
+</div>
+<!-- Card ends here -->
+
+  </main>
+</body>
+
+<div class="footer bg-light">
+  <p>With Thanks to Code First Girls and Service Now</p>
+</div>
+
+</html>
